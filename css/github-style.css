@@ -1,4 +1,4 @@
-/* ========== Begin Global Styles ==========*/
+/* ========== Begin Universal Styles ==========*/
 
 *,
 *:before,
@@ -15,6 +15,10 @@
 	content: " ";
 	clear: both;
 }
+/* ========== End Universal Styles ==========*/
+
+/* ========== Begin Global Styles ==========*/
+
 
 .floatR {
 	float: right;
@@ -31,11 +35,11 @@
 ul li {list-style-type: none;
 	text-decoration: none;}
 
-img {border: 0;}
-
 body {
+	background: rgba(219,218,216,1) url('../img/github-present.jpg') center top no-repeat;
+	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 62.5%;
 }
 
 a:link {
@@ -57,43 +61,69 @@ a:active {
 }
 
 .container {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
-
-/* ========== End Global Styles ==========*/
 
 .hide {
 	display: none;
 }
 
+/* ========== End Global Styles ==========*/
+/* ========== Begin Page Styles ==========*/
+
+
+
+.mainHeader {
+	background: rgba(103,1,0,0.8);
+	color: rgba(230,230,230,1);
+	margin-top: 1em;
+	padding-top: 1em;
+	width: 100%;
+}
+
 nav ul li {
-	background: green;
+	list-style-type: none;
+	background: rgba(103,1,0,0.8);
+	display: inline;
 	text-align: center;
 	width: 33.33%;
+	margin: 0 auto;
+	padding: .5em;
 	float: left;
+	font-size: 1.4em;
 }
 
 .terminal {
-	background: red;
+	background: rgba(103,1,0,0.8);
 	width: 100%;
 	height: 100%;
-	margin-top: 10px;
+	margin-top: 2em;
 }
 
 #field {
-	width: 25%;
+	width: 100%;
 	height: 30px;
 	display: block;
-	text-align: center;
+	color: rgba(230,230,230,1);
+	background: rgba(103,1,0,0.8);
+	border: none;
+	padding-left: 5%;
+	font-size: 1.4em;
 }
 
 .terminal p {
 	margin: 20px;
-	line-height: 20px;
+	line-height: 1.5em;
+	color: rgba(230,230,230,1);
+	font-size: 1.4em;
 }
 
 footer {
-	margin-top: 10px;
-	background: blue;
+	background: rgba(103,1,0,0.8);
+	text-align: center;
+	padding: 5px;
+	font-size: 1em;
 }
+
+/* ========== End Page Styles ==========*/
