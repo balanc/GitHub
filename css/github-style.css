@@ -24,6 +24,10 @@
 	float: left;
 }
 
+.center {
+	text-align: center;
+}
+
 ul li {list-style-type: none;
 	text-decoration: none;}
 
@@ -65,12 +69,31 @@ a:active {
 
 nav ul li {
 	background: green;
+	text-align: center;
+	width: 33.33%;
+	float: left;
 }
 
 .terminal {
 	background: red;
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+}
+
+#field {
+	width: 25%;
+	height: 30px;
+	display: block;
+	text-align: center;
+}
+
+.terminal p {
+	margin: 20px;
+	line-height: 20px;
 }
 
 footer {
+	margin-top: 10px;
 	background: blue;
 }

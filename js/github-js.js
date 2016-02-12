@@ -2,9 +2,10 @@ $(document).ready(function(){
 
 	//variables
 
-	var user = $("#field");
+	var user = $('#field');
 	var value;
 	var check = true;
+	var text;
 	// var val = user.val().toLowerCase(); //get user input
 
 	//functions
@@ -15,9 +16,15 @@ $(document).ready(function(){
 	}
 
 	function showText(){
-		$(".hide").animate({
+		$("p.hide").animate({
 			width: 'toggle',
 			height: 'toggle'
+		});
+	}
+
+	function letterText(){
+		$("p.hide").each(function(){
+			text += $(this).html() + ' ';
 		});
 	}
 
@@ -27,31 +34,27 @@ $(document).ready(function(){
 	        // console.log($(user).val().toLowerCase());
 	        value = $(user).val().toLowerCase();
 
-	        if(value == 'git pull' && check == true)
+	        if(value == 'git log' && check == true)
 	        {
 	        	showText();
 	        	check = false
 
-	        } else if(value == 'git merge' && check == false) {
+	        } else if(value == 'clear' && check == false) {
 
 	        	showText();
+	        	$('.add').remove();
 	        	check = true
-
-	        } else if(value == 'clear') {
-
-	        	
 
 	        } else {
 
-	        	$('.terminal').append('<p>Already up-to-date</p>');
-
+				$(".terminal").append('<span class="add">'+"Just follow directions"+'</span>');
 	        }
 
 	        clearUser();
 	    }
 	});
 
-
+	letterText();
 
 	// writeLog();
 
