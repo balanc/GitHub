@@ -21,8 +21,8 @@ $(document).ready(function(){
 	function showText(){
 		$("p.hide").animate({
 			width: 'toggle',
-			height: 'toggle'
-		});
+			height: 'toggle',
+		}, 750, "easeOutExpo");
 	}
 
 	//unimplemented function gets contents of all paragraph tags for letter
@@ -49,6 +49,10 @@ $(document).ready(function(){
 	        	showText(); //toggle letter contents
 	        	$('.add').remove(); //remove appended text if existing
 	        	check = false
+
+	        } else if (value == 'git love' && check == false) {
+	        
+	        	//append same log?
 
 	        } else if(value == 'clear' && check == false) {
 
