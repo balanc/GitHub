@@ -65,6 +65,12 @@ a:active {
 	margin: 0 auto;
 }
 
+.throw {
+	position: absolute;
+	top: -999em;
+	left: -999em;
+}
+
 .hide {
 	display: none;
 }
@@ -114,9 +120,15 @@ nav ul li {
 
 .terminal p {
 	margin: 20px;
-	line-height: 1.5em;
+	line-height: 1.8em;
 	color: rgba(230,230,230,1);
 	font-size: 1.4em;
+}
+
+mark {
+	background: rgba(122,91,91,0.8);
+	padding: 0em 0.5em 0em 0.5em;
+	color: rgba(230,230,230,1);
 }
 
 footer {
